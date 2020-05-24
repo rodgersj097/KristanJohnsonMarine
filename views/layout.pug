@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Kristen Johnson Marina
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/uikit.css')
+    link(rel='stylesheet', href='/stylesheets/uikit-rtl.css')
+    link(href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  body
+    include partials/header
+    block content
+
+    block scripts
+      script(src="/javascripts/uikit.min.js")
+      script(src="/javascripts/uikit-icons.min.js")
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")

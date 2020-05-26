@@ -1,77 +1,76 @@
 extends layout
 
 block content
-  .uk-background.uk-background-norepeat.uk-background-fixed.uk-height-viewport.uk-flex.uk-flex-center.uk-flex-middle(style="background-image: url(/images/bg.webp);")
-    .uk-container.uk-margin-top
-      .uk-grid-column-small.uk-margin(uk-grid="" class="uk-child-width-1-1@l uk-child-width-1-1@s")
-        .uk-card.uk-card-default
-          .uk-card-header
-              .uk-card-title
-                h2.uk-text-center About Us
-          .uk-card-body
-            p
-              |Kristen Johnston has been a marine mechanic for 30 years and has been Mercury/Mercuiser certified for 28 years as well as in the past BRP certified for 30 years. We provide great service and try
-              |to minimize your down time. We use quicksilver branded OEM Mercury/Mercuiser parts and oil when ever possible. We have a fully equipped mechanical shop equipped with all the necessary tools and
-              |special tools (Mercury/Mercruiser and many BPR) required, including computer diagnostics to complete mechanical repairs, Marine operators insurance and equipment to transport atll water craft in
-              | a safe manor including a 18,000 lb forklift for those who do not have a trailer.
-        .uk-card.uk-card-default.uk-margin
-          .uk-card-header
-            .uk-card.title
-              h2.uk-text-center Contact Us
-          .uk-card-body
-            p
-            |Please contact us for more information
-            div.uk-flex
-              ul.noListStyle
-                li kristen@kristenjohnsonmarine.com
-                li 3630 South Portage Road,
-              ul.noListStyle
-                li Huntsville, ON P1H 2J3
-                li (705) 788-1632
-                li Open By Appointment Only
-        div(class="uk-width-1-2").uk-grid-item-match.uk-margin-bottom
-          .uk-card.uk-card-default
-            .uk-card-header
-              .uk-card-title
-                h2.uk-text-center Winterization
-            .uk-card-body
-              h3 Winterizing includes the following:
-              ul
-                li Draining the water from the drive and engine as needed.
-                li Disconnecting the battery.
-                li Fogging the engine.
-                li Adding fuel stabalizer to the fuel tank.
-                li Changing the engine oil and filter.
-                li Changing the gear oil.
-              p
-                |All boats are Shrink wrapped for storage on site and include moisture bucket and venting, shrink wrap prices available by call. Snow is removed throughout the winter season as needed.
-              p
-                |Its is our intention to winterize and wrap boars immediately as they come in, and it increases in difficulty drastically for us when they come in wet. Please be aware that shrink
-                | wrap is most effective when boats are put away dry and we ask our clients to do their best to ensure boats are prepared for immediate storage.
-              P
-                |Please remember to notify us in advance to book your winter storage. We are done for the season the 31st of October.
-        div(class="uk-width-1-2").uk-margin-bottom
-          .uk-card.uk-card-default
-            .uk-card-header
-              .uk-card-title
-                h2.uk-text-center Summerization
-            .uk-card-body
-              h3 Summerizing includes the following:
-              ul
-                li Load testing and re-connecting the battery.
-                li Reinstalling the engine drain plugs and hoses.
-                li Testing the boat systems for operation
-                li Running the engine on muffs.
-              p Some Important notes, we DO need:
-              ul
-                li The key
-                li A charged battery
-                li Fuel
-                li Your cover a poles
-              p We DO NOT need:
-              ul
-                li Life Jackets
-                li Water Toys
-                li Inflatables
-                li Spare towels/clothing/old picnic lunches
-              p Please make sure only the necessary items are included in your boat. The fewer items in your boat the better
+    .contained.uk-overflow-hidden
+        .uk-background.uk-background-norepeat.uk-height-viewport.uk-flex.uk-flex-center.uk-flex-middle.uk-background-cover.uk-animation-reverse.uk-transform-origin-bottom-left(uk-scrollspy="cls: uk-animation-kenburns;" style="background-image: url(/images/bg.webp);")
+        #about.noAni
+            h2.uk-padding-large About Us
+            p.uk-position-large
+                |Kristen Johnston has been a marine mechanic for 30 years and has been Mercury/Mercuiser certified for 28 years as well as in the past BRP certified for 30 years. We provide great service and try
+                |to minimize your down time. We use quicksilver branded OEM Mercury/Mercuiser parts and oil when ever possible. We have a fully equipped mechanical shop equipped with all the necessary tools and
+                |special tools (Mercury/Mercruiser and many BPR) required, including computer diagnostics to complete mechanical repairs, Marine operators insurance and equipment to transport atll water craft in
+                | a safe manor including a 18,000 lb forklift for those who do not have a trailer.
+        .uk-padding
+        .uk-background.uk-height-viewport.uk-flex.uk-flex-center.uk-flex-middle.uk-background-cover(class="uk-background-image@m" style="background-image: url(/images/winterizing.webp);")#winter
+            .uk-card.uk-card-primary.winter(uk-scrollspy="cls: uk-animation-slide-right; repeat:true; delay:10;")
+                .uk-card-header
+                    .uk-card-title
+                        h2.uk-text-center Winterization
+                .uk-card-body
+                    h3#white Winterizing includes the following:
+                    ul
+                        li#white Draining the water from the drive and engine as needed.
+                        li#white Disconnecting the battery.
+                        li#white Fogging the engine.
+                        li#white Adding fuel stabalizer to the fuel tank.
+                        li#white Changing the engine oil and filter.
+                        li#white Changing the gear oil.
+                    p#white
+                        |All boats are Shrink wrapped for storage on site and include moisture bucket and venting, shrink wrap prices available by call. Snow is removed throughout the winter season as needed.
+                    p#white
+                        |Its is our intention to winterize and wrap boars immediately as they come in, and it increases in difficulty drastically for us when they come in wet. Please be aware that shrink
+                        | wrap is most effective when boats are put away dry and we ask our clients to do their best to ensure boats are prepared for immediate storage.
+                    P#white
+                        |Please remember to notify us in advance to book your winter storage. We are done for the season the 31st of October.
+        .uk-padding
+        .uk-background.uk-height-viewport.uk-flex.uk-flex-center.uk-flex-middle.uk-background-cover#summer(class="uk-background-image@m" style="background-image: url(/images/summerizing.webp);" uk-parallax="bgy: -200")
+            .uk-card.uk-card-default.summer(uk-scrollspy="cls: uk-animation-slide-left; repeat:true; delay:10;")
+                .uk-card-header
+                    .uk-card-title
+                        h2.uk-text-center Summerization
+                .uk-card-body
+                    h3 Summerizing includes the following:
+                    ul
+                        li Load testing and re-connecting the battery.
+                        li Reinstalling the engine drain plugs and hoses.
+                        li Testing the boat systems for operation
+                        li Running the engine on muffs.
+                    p Some Important notes, we DO need:
+                    ul
+                        li The key
+                        li A charged battery
+                        li Fuel
+                        li Your cover a poles
+                    p We DO NOT need:
+                    ul
+                        li Life Jackets
+                        li Water Toys
+                        li Inflatables
+                        li Spare towels/clothing/old picnic lunches
+                    p Please make sure only the necessary items are included in your boat. The fewer items in your boat the better
+        .uk-background.uk-height-viewport.uk-flex.uk-flex-center.uk-flex-middle.uk-background-cover.uk-background-fixed#contact(style="background-image: url(/images/pond.webp);")
+            .overlaySolid
+                h2.uk-text-center Contact Us
+                    p.uk-text-center
+                        |Please contact us for more information
+                    ul.noListStyle.uk-padding
+                        li kristen@kristenjohnsonmarine.com
+                        li 3630 South Portage Road,
+                        li Huntsville, ON P1H 2J3
+                        li (705) 788-1632
+                        li Open By Appointment Only
+        #notice(uk-modal)
+            .uk-modal-dialog.uk-modal-body
+                button.uk-modal-close-default(type="button" uk-close)
+                h2.uk-modal-title.uk-text-danger Notice
+                p We are not responsible for fluctuations in temperatures that may result in dangerous lows later in the season.
